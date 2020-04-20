@@ -1,0 +1,151 @@
+// COLOR VARIABLES
+$color-primary: #fff;
+
+// FONT VARIABLES
+$font-primary: 'Segoe UI',
+sans-serif;
+$font-display: 'PFDinTextCompPro',
+sans-serif;
+
+$transition: all .2s;
+
+@mixin respondHeight($breakpoint) {
+    @if $breakpoint==phone {
+        @media only screen and (max-height: 40em) {
+            @content
+        }
+
+        ; // 640px
+    }
+
+    @if $breakpoint==tab-port {
+        @media only screen and (max-height: 56.25em) {
+            @content
+        }
+
+        ; // 900px
+    }
+
+    @if $breakpoint==tab-land {
+        @media only screen and (max-height: 75em) {
+            @content
+        }
+
+        ; // 1200px
+    }
+}
+
+@mixin respondWidth($breakpoint) {
+    @if $breakpoint==phone-sm {
+        @media only screen and (max-width: 21.875em) {
+            @content
+        }
+
+        ; // 600px
+    }
+
+    @if $breakpoint==phone {
+        @media only screen and (max-width: 37.5em) {
+            @content
+        }
+
+        ; // 600px
+    }
+
+    @if $breakpoint==tab-port {
+        @media only screen and (max-width: 56.25em) {
+            @content
+        }
+
+        ; // 900px
+    }
+
+    @if $breakpoint==tab-land {
+        @media only screen and (max-width: 75em) {
+            @content
+        }
+
+        ; // 1200px
+    }
+
+    @if $breakpoint==big-desktop-l {
+        @media only screen and (max-width: 87.5em) {
+            @content
+        }
+
+        ; // 1400px
+    }
+
+    @if $breakpoint==big-desktop-xl {
+        @media only screen and (min-width: 100em) {
+            @content
+        }
+
+        ; // 1600px
+    }
+
+    @if $breakpoint==big-desktop-xxl {
+        @media only screen and (min-width: 118.75em) {
+            @content
+        }
+
+        ; // 1900px
+    }
+}
+
+@mixin respondWidthHeight($breakpoint) {
+    @if $breakpoint==tablet {
+        @media only screen and (max-width: 56.25em) and (max-height: 56.25em) {
+            @content
+        }
+
+        ; // 600px
+    }
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px / 16px = 62.5% => 1rem = 10px
+}
+
+body {
+    font-family: $font-primary;
+    position: relative;
+}
+
+.container {
+    max-width: 114rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+p {
+    margin: 0;
+}
+
+h3 {
+    text-transform: unset;
+}
+
+ol,
+ul {
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.container,
+.container-fluid {
+    padding: 0;
+}

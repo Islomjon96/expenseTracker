@@ -1,0 +1,157 @@
+@import url(../fonts/stylesheet.css);
+@import url(../fonts/imoon/style.css);
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  position: relative; }
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  position: relative; }
+
+.mtb-lg {
+  margin-top: 5rem !important;
+  margin-bottom: 5rem !important; }
+
+.mtb-lg-2 {
+  margin-top: 4rem !important;
+  margin-bottom: 4rem !important; }
+
+.mb-lg {
+  margin-bottom: 5rem !important; }
+
+.mb-lg-2 {
+  margin-bottom: 4rem !important; }
+
+.mt-lg-2 {
+  margin-top: 4rem !important; }
+
+.mt-lg {
+  margin-top: 5rem !important; }
+
+.mt-xl {
+  margin-top: 7rem !important; }
+
+.mb-xl {
+  margin-bottom: 7rem !important; }
+
+.mt-sm {
+  margin-top: 2rem !important; }
+
+.mb-md {
+  margin-bottom: 2rem !important; }
+
+.mb-sm {
+  margin-bottom: 1rem !important; }
+
+.ml-xxl {
+  margin-left: 10rem !important; }
+
+.mb-xxl {
+  margin-bottom: 10rem !important; }
+
+p {
+  margin: 0; }
+
+h3 {
+  text-transform: unset; }
+
+ol, ul {
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+.container, .container-fluid {
+  padding: 0; }
+
+.heading-1 {
+  font-size: 8rem;
+  color: #fff;
+  font-family: "PFDinTextCompPro", sans-serif;
+  font-weight: 300;
+  height: 18rem; }
+
+.heading-2 {
+  font-family: "PFDinTextCompPro", sans-serif;
+  line-height: 1;
+  font-size: 5rem;
+  color: #fff;
+  font-weight: 300;
+  display: flex;
+  align-items: center; }
+
+.heading-3 {
+  font-size: 3rem;
+  color: #303030;
+  font-family: "PFDinTextCompPro", sans-serif;
+  line-height: 1;
+  font-weight: 300;
+  display: flex;
+  align-items: flex-end; }
+
+.paragraph {
+  font-size: 1.6rem;
+  font-weight: 400; }
+  .paragraph--bold {
+    font-weight: 800; }
+  .paragraph--uppercase {
+    text-transform: uppercase; }
+  .paragraph--xxl {
+    font-size: 7rem;
+    font-family: "PFDinTextCompPro", sans-serif; }
+  .paragraph--xl {
+    font-size: 4.3rem;
+    line-height: 1; }
+  .paragraph--lg {
+    font-size: 3.4rem; }
+  .paragraph--md {
+    font-size: 1.8rem; }
+  .paragraph--sm {
+    font-size: 1.7rem; }
+
+.list li {
+  color: #c6c6c6;
+  color: #c6c6c6;
+  font-size: 1.7rem;
+  padding-left: 1.7rem;
+  line-height: 2.5rem;
+  position: relative;
+  list-style-type: none;
+  font-weight: 400; }
+
+.list-bullet {
+  display: inline-block;
+  max-width: .8rem;
+  max-height: .8rem;
+  min-width: 0.8rem;
+  min-height: 0.8rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 1rem;
+  left: 0; }
+
+.btn {
+  padding: 1rem 3rem .8rem 3rem;
+  cursor: pointer;
+  left: 0;
+  transform: none;
+  margin: auto;
+  width: auto;
+  display: inline-block;
+  position: relative;
+  transition: all 0.2s;
+  background-color: #ffffff; }
