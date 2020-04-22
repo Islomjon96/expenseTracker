@@ -1,0 +1,172 @@
+.main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.expenseTracker-container {
+    width: 22rem;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.balance {
+    margin: 3rem 0 2rem 0;
+
+    &-text {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    &-value {
+        span {
+            font-size: 3rem;
+            font-weight: 400;
+            line-height: 1;
+        }
+    }
+}
+
+.result-container {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    margin-bottom: 3rem;
+    box-shadow: $box-shadow;
+
+    &>div:not(:last-child) {
+        border-right: 1px solid $color-grey;
+    }
+}
+
+.result {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-value {
+        display: flex;
+
+        p,
+        span {
+            font-size: 1.8rem;
+        }
+    }
+
+    &-value--income p,
+    &-value--income span {
+        color: $color-green;
+    }
+
+    &-value--expense p,
+    &-value--expense span {
+        color: $color-red;
+    }
+
+    &-text {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: normal;
+        margin-bottom: 0.25rem;
+    }
+}
+
+.history {
+
+    &-container {
+        margin-bottom: 2rem;
+    }
+
+    &-value {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        box-shadow: $box-shadow;
+
+        &.expense {
+            border-right: 5px solid $color-red;
+        }
+
+        &.income {
+            border-right: 5px solid $color-green;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+
+    &-value:hover &-delete {
+        opacity: 1;
+    }
+
+    &-delete {
+        position: absolute;
+        padding: 0.5rem;
+        border-radius: 0;
+        border: none;
+        background: $color-red;
+        color: $color-white;
+        right: 100%;
+        font-size: 1.25rem;
+        cursor: pointer;
+        opacity: 0;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+
+}
+
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    label {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        padding: .5rem;
+        font-size: 1.2rem;
+        color: $color-primary;
+        border: 1px solid $color-grey;
+
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.addTransaction {
+    background: $color-purple;
+    font-size: 1.2rem;
+    color: $color-white;
+    width: 100%;
+    padding: .75rem;
+    box-shadow: $box-shadow;
+
+    &:focus {
+        outline: none;
+    }
+}

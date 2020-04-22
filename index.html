@@ -2,15 +2,70 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <title></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Контроль расходов</title>
 </head>
 
 <body>
+  <div class="main">
+    <div class="expenseTracker-container">
+      <h1>Контроль расходов</h1>
+      <div class="balance">
+        <span class="balance-text">Ваш баланс</span>
+        <div class="balance-value">
+          <span class="balance-amount" id="balanceAmount">00.00</span>
+          <span class="balance-rate"> &#8381;</span>
+        </div>
+      </div>
+      <div class="result-container">
+        <div class="result">
+          <span class="result-text">
+            Доход
+          </span>
+          <div class="result-value result-value--income">
+            <p class="result-amount" id="incomeAmount">00.00</p>
+            <span class="result-rate"> &#8381;</span>
+          </div>
+        </div>
+        <div class="result">
+          <span class="result-text">
+            Расход
+          </span>
+          <div class="result-value result-value--expense">
+            <p class="result-amount" id="expenseAmount">00.00</p>
+            <span class="result-rate"> &#8381;</span>
+          </div>
+        </div>
+      </div>
 
-    <script src="js/script.js"></script>
+      <div class="history-container">
+        <h2>История операций</h2>
+        <div id="historyContainer"></div>
+      </div>
+      <div class="transaction-container">
+        <h2>Добавить новую транзакцию</h2>
+        <form id="transactionForm">
+          <div class="form-control">
+            <label for="transactionText">Текст</label>
+            <input type="text" placeholder="Введите текст..." id="transactionText" />
+          </div>
+          <div class="form-control">
+            <label for="transactionAmount">Сумма
+              <span>(негативный - расход, позитивный - доход)</span></label>
+            <input type="number" placeholder="Введите количество..." id="transactionAmount" />
+          </div>
+          <button class="addTransaction" id="addTransaction">
+            Добавить транзакцию
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

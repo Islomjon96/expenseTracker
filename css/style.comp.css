@@ -1,0 +1,166 @@
+@import url(../fonts/stylesheet.css);
+@import url(../fonts/imoon/style.css);
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  position: relative; }
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  position: relative; }
+
+p {
+  margin: 0; }
+
+h3 {
+  text-transform: unset; }
+
+ol,
+ul {
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+.container,
+.container-fluid {
+  padding: 0; }
+
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1.4em;
+  border-bottom: 1px solid grey;
+  padding-bottom: .75rem;
+  margin-bottom: 1.5rem; }
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.expenseTracker-container {
+  width: 22rem; }
+  .expenseTracker-container h1 {
+    text-align: center; }
+
+.balance {
+  margin: 3rem 0 2rem 0; }
+  .balance-text {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1; }
+  .balance-value span {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1; }
+
+.result-container {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  margin-bottom: 3rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  .result-container > div:not(:last-child) {
+    border-right: 1px solid #bbb; }
+
+.result {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .result-value {
+    display: flex; }
+    .result-value p,
+    .result-value span {
+      font-size: 1.8rem; }
+  .result-value--income p,
+  .result-value--income span {
+    color: #2ecc71; }
+  .result-value--expense p,
+  .result-value--expense span {
+    color: #c0392b; }
+  .result-text {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: 0.25rem; }
+
+.history-container {
+  margin-bottom: 2rem; }
+
+.history-value {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  .history-value.expense {
+    border-right: 5px solid #c0392b; }
+  .history-value.income {
+    border-right: 5px solid #2ecc71; }
+  .history-value p {
+    font-size: 1.2rem; }
+
+.history-value:hover .history-delete {
+  opacity: 1; }
+
+.history-delete {
+  position: absolute;
+  padding: 0.5rem;
+  border-radius: 0;
+  border: none;
+  background: #c0392b;
+  color: #fff;
+  right: 100%;
+  font-size: 1.25rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: all .3s; }
+  .history-delete:focus {
+    outline: none; }
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem; }
+  .form-control label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    display: flex;
+    flex-direction: column; }
+  .form-control input {
+    padding: .5rem;
+    font-size: 1.2rem;
+    color: #000;
+    border: 1px solid #bbb; }
+    .form-control input:focus {
+      outline: none; }
+
+.addTransaction {
+  background: #9c88ff;
+  font-size: 1.2rem;
+  color: #fff;
+  width: 100%;
+  padding: .75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  .addTransaction:focus {
+    outline: none; }
