@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "materialize-css": "^1.0.0-rc.2",
-    "swiper": "^4.4.6",
+    "swiper": "^6.5.1",
     "typed.js": "^2.0.9",
     "wow.js": "^1.2.2"
   }
